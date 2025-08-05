@@ -1,4 +1,4 @@
-import logging
+    import logging
 from telegram import Update, InlineQueryResultArticle, InputTextMessageContent
 from telegram.ext import Application, CommandHandler, InlineQueryHandler, ContextTypes, MessageHandler, filters
 import re
@@ -7,8 +7,8 @@ import os
 # === YEH BOT DO CHEEZON PAR CHALEGA ===
 # 1. BOT_TOKEN: BotFather se mila hua token
 # 2. ADMIN_ID: Aapki apni Telegram User ID
-BOT_TOKEN = os.environ.get("BOT_TOKEN7901512157:AAE-_-bctR5eYnJpg8UPukFSQqBliFzFt94")
-ADMIN_ID = int(os.environ.get("6693340692", 0))
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+ADMIN_ID = int(os.environ.get("ADMIN_ID", 0))
 
 # User IDs ko store karne ke liye (jab bot restart hoga to yeh reset ho jayega)
 user_ids = set()
